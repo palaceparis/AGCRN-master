@@ -134,7 +134,7 @@ if args.lr_decay:
                                                         milestones=lr_decay_steps,
                                                         gamma=args.lr_decay_rate)
     #lr_scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer=optimizer, T_max=64)
-
+    
 #config log path
 current_time = datetime.now().strftime('%Y%m%d%H%M%S')
 current_dir = os.path.dirname(os.path.abspath('.'))
